@@ -1,0 +1,10 @@
+steps:
+- name: 'maven:3.8.3-openjdk-17'
+  entrypoint: 'mvn'
+  args: ['clean', 'package']#, '-Pappengine']
+- name: 'gcr.io/cloud-builders/gsutil'
+  args: ['cp','target/*.jar','gs://container-experimentation.appspot.com/test/']
+#- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+#  entrypoint: 'bash'
+#  args: ['-c', 'gcloud app deploy']
+

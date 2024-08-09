@@ -1,0 +1,26 @@
+package com.example.helloworld.service;
+/*
+import com.example.helloworld.entity.User;
+import com.example.helloworld.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserService {
+
+    private final UserRepository userRepository;
+
+    @Autowired
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    public User saveUser(User user) {
+        return userRepository.save(user);
+    }
+
+    // Other methods for finding, updating, and deleting users
+}*/
+
+public class UserService {
+}
